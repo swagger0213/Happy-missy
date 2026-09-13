@@ -1,0 +1,82 @@
+SELECT TOP (1000) [username]
+      ,[password]
+  FROM [Cheque].[dbo].[AdminLogin]
+
+
+SELECT TOP (1000) [BankID]
+      ,[BankName]
+  FROM [Cheque].[dbo].[Banks]
+
+
+SELECT TOP (1000) [ChequeID]
+      ,[PaidTo]
+      ,[BankName]
+      ,[AccountType]
+      ,[AccountNumber]
+      ,[ChequeNo]
+      ,[ChequeAmount]
+      ,[BillNo]
+      ,[DateIssued]
+      ,[Description]
+  FROM [Cheque].[dbo].[Cheques]
+
+
+SELECT TOP (1000) [Id]
+      ,[IssueDate]
+      ,[PaidTo]
+      ,[TaxableAmount]
+      ,[VAT]
+      ,[TotalAmount]
+  FROM [Cheque].[dbo].[DemoReport]
+
+
+SELECT TOP (1000) [PartyID]
+      ,[PartyName]
+  FROM [Cheque].[dbo].[Parties]
+
+
+SELECT TOP (1000) [Id]
+      ,[UserId]
+      ,[FullName]
+      ,[Phone]
+      ,[Address]
+      ,[Bio]
+      ,[Gender]
+      ,[Website]
+      ,[ProfilePhotoPath]
+      ,[ProfilePhotoData]
+      ,[CreatedAt]
+      ,[UpdatedAt]
+  FROM [Cheque].[dbo].[Profiles]
+
+
+SELECT TOP (1000) [Id]
+      ,[FileName]
+      ,[CreatedAt]
+  FROM [Cheque].[dbo].[PurchaseFiles]
+
+
+SELECT TOP (1000) [Id]
+      ,[FileId]
+      ,[SheetId]
+      ,[Date]
+      ,[PurchaseFrom]
+      ,[BillNo]
+      ,[TaxableAmount]
+      ,[VAT]
+      ,[TotalAmount]
+  FROM [Cheque].[dbo].[PurchaseRows]
+
+
+SELECT TOP (1000) [Id]
+      ,[FileId]
+      ,[SheetName]
+  FROM [Cheque].[dbo].[PurchaseSheets]
+
+
+SELECT TOP (1000) [id]
+      ,[username]
+      ,[firstName]
+      ,[lastName]
+      ,[password]
+  FROM [Cheque].[dbo].[Users]
