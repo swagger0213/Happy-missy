@@ -1,0 +1,184 @@
+.cheque-demo-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: visible;
+  min-height: 100vh; 
+  box-sizing: border-box;
+}
+
+.hamburgersss {
+  position: fixed;
+  top: -10px;
+  left: -10px;
+  z-index: 10000;
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #050505;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: color 0.3s ease;
+}
+
+
+form.Demo-form {
+  background-color: #ffffff;
+  padding: 30px 50px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  width: 600px;
+  max-width: 90vw; 
+  height: auto;
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  box-sizing: border-box;
+}
+
+.Demo-form h3 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.Demo-form label {
+  font-weight: bold;
+  color: #34495e;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.Demo-form input[type="text"],
+.Demo-form input[type="number"],
+.Demo-form input[type="date"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+.Demo-form input:focus {
+  border-color: #34495e;
+  outline: none;
+}
+
+.suggestionss {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  font-weight: bold;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 9999;
+  color: rgb(16, 16, 16);
+  width: 250px;
+  margin-left: 10px;
+  box-sizing: border-box;
+}
+
+.suggestionss li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.suggestionss li:hover {
+  background-color: #f3c1c1;
+}
+
+.submit-button-demo {
+  background-color: #34495e;
+  color: white;
+  padding: 12px 18px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  align-self: center;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
+.submit-button-demo:hover {
+  background-color: #2c3e50;
+}
+
+
+@media (max-width: 900px) {
+  form.Demo-form {
+    padding: 25px 30px;
+    width: 90vw;
+    min-height: auto;
+    margin-top: -42%;
+  }
+}
+
+@media (max-width: 600px) {
+  .cheque-demo-container {
+    padding: 20px 15px;
+  }
+
+  .hamburgersss {
+    font-size: 24px;
+    top: 10px;
+    left: 10px;
+  }
+
+  form.Demo-form {
+    padding: 20px 20px;
+    width: 100%;
+    min-height: auto;
+  }
+
+  .submit-button-demo {
+    max-width: 100%;
+  }
+
+  .suggestionss {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .hamburgersss {
+    font-size: 20px;
+    top: 8px;
+    left: 8px;
+    padding: 4px 8px;
+  }
+
+  .Demo-form h3 {
+    font-size: 22px;
+  }
+
+  .Demo-form input[type="text"],
+  .Demo-form input[type="number"],
+  .Demo-form input[type="date"] {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+  
+  .submit-button-demo {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+}

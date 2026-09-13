@@ -1,0 +1,200 @@
+.bank-content {
+  padding: 30px;
+  background-color: #f4f6f8;
+  flex-grow: 1;
+  min-height: 100vh;
+  position: relative;
+  padding-top: 60px; 
+}
+
+.hamburgerss {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.add-title {
+  margin-right: 1310px;
+}
+
+.bank-input {
+  padding: 8px;
+  margin-right: 10px;
+  width: 300px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-bank-button {
+  padding: 8px 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.add-bank-button:hover {
+  background-color: #218838;
+}
+
+.bank-table {
+  width: 65%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-left: 1px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.bank-table th,
+.bank-table td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.bank-table th {
+  background-color: #2e3b4e;
+  color: white;
+  width: 25%;
+ 
+}
+.bank-table thead th {
+  position: sticky;
+  
+}
+
+.bank-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.bank-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.bank-delete-button {
+  padding: 6px 12px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.bank-delete-button:hover {
+  background-color: #c82333;
+}
+
+@media screen and (max-width: 768px) {
+  .bank-content {
+    padding: 20px;
+    padding-top: 60px;
+  }
+
+  .bank-input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .add-bank-button {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .bank-table {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .add-title {
+    margin-right: 0;
+  }
+  .add-bank-button {
+    padding: 12px 16px;
+    background-color: #218838;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 31%;
+    height: 5%;
+  }
+}
+
+.add-title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.bank-input {
+  padding: 8px;
+  margin-right: 10px;
+  width: 300px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+.add-bank-button:hover {
+  background-color: #218838;
+}
+
+.bank-table {
+  width: 65%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-left: 1px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bank-table th,
+.bank-table td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.bank-table th {
+  background-color: #2e3b4e;
+  color: white;
+  width: 25%;
+}
+
+.bank-table thead th {
+  position: sticky;
+  top: 0;
+  background-color: #2e3b4e;
+}
+
+.bank-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.bank-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.bank-delete-button {
+  padding: 6px 12px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.bank-delete-button:hover {
+  background-color: #c82333;
+}

@@ -1,0 +1,122 @@
+.user-list-container {
+  padding: 20px;
+  background-color: white;
+  height: 100%;
+  width: 80%;
+  margin-left: 30px;
+}
+
+.user-list-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.user-card {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 12px 20px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.avatar-circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.username-text {
+  font-size: 18px;
+  flex-grow: 1;
+  width: 80%;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+.hambu {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 999;
+}
+
+@media (max-width: 768px) {
+  .user-list-container {
+    width: 100%;
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .user-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .username-text {
+    width: 100%;
+  }
+
+  .delete-button {
+    align-self: flex-end;
+  }
+
+  .hambu {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+  }
+  h2 {
+    margin-left: 30px;
+    margin-bottom: -20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .avatar-circle {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+  }
+
+  .username-text {
+    font-size: 16px;
+    margin-top: -25px;
+    margin-left: 40px;
+  }
+
+  .delete-button {
+    padding: 6px 12px;
+    font-size: 14px;
+    margin-top: -25px;
+  }
+
+  .user-list-container h2 {
+    font-size: 20px;
+  }
+}
